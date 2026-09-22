@@ -1,0 +1,13 @@
+SQL Injection
+
+SQL Injection은 사용자가 입력한 값이 SQL 쿼리에 안전하게 처리되지 않을 때 발생할 수 있는 보안 취약점이다.
+
+공격자는 입력값에 SQL 구문을 삽입하여 데이터베이스 쿼리의 동작을 변경할 수 있다. 이로 인해 인증 우회, 데이터 유출, 데이터 수정 또는 삭제 등의 문제가 발생할 수 있다.
+
+SQL Injection을 방지하는 가장 중요한 방법 중 하나는 Prepared Statement 또는 Parameterized Query를 사용하는 것이다.
+
+사용자 입력값을 SQL 문자열에 직접 연결하지 않고 별도의 파라미터로 처리해야 한다.
+
+또한 데이터베이스 계정에는 필요한 최소한의 권한만 부여하는 것이 좋다.
+
+출처: OWASP SQL Injection Prevention Cheat Sheet

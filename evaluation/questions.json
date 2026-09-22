@@ -1,0 +1,124 @@
+[
+  {
+    "question": "SQL Injection이 뭐야?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "SQL Injection은 왜 위험해?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "SQL Injection을 어떻게 방어해?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "Prepared Statement는 왜 사용해?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "Parameterized Query란 무엇이야?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "SQL 쿼리에 사용자 입력값을 직접 넣으면 왜 위험해?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "데이터베이스 계정 권한은 어떻게 설정해야 해?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "인증 우회 공격과 관련된 웹 취약점은 뭐야?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "데이터베이스 정보 유출을 일으킬 수 있는 공격은?",
+    "expected_document": "sql_injection.txt"
+  },
+  {
+    "question": "SQL 명령어 삽입 공격을 막는 방법은?",
+    "expected_document": "sql_injection.txt"
+  },
+
+  {
+    "question": "XSS가 뭐야?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "Cross Site Scripting이란 무엇이야?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "웹페이지에 악성 스크립트를 삽입하는 공격은?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "XSS 공격으로 쿠키가 탈취될 수 있어?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "XSS를 어떻게 방어해?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "사용자 입력값을 웹페이지에 출력할 때 주의할 점은?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "HTML escaping은 왜 필요해?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "Content Security Policy는 어떤 공격 방어에 도움이 돼?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "브라우저에서 악성 자바스크립트가 실행되는 취약점은?",
+    "expected_document": "xss.txt"
+  },
+  {
+    "question": "출력 위치에 따라 인코딩을 다르게 해야 하는 이유는?",
+    "expected_document": "xss.txt"
+  },
+
+  {
+    "question": "비밀번호는 데이터베이스에 어떻게 저장해야 해?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "비밀번호를 평문으로 저장하면 왜 안 돼?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "Argon2id는 어디에 사용해?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "bcrypt는 어떤 용도로 사용해?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "scrypt는 무엇에 사용하는 알고리즘이야?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "비밀번호 해시에서 salt가 왜 필요해?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "같은 비밀번호인데 해시값이 다르게 나오게 하려면?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "비밀번호 저장에 단방향 해시가 적합한 이유는?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "비밀번호를 암호화해서 복호화하는 방식보다 권장되는 방법은?",
+    "expected_document": "password_security.txt"
+  },
+  {
+    "question": "안전한 비밀번호 저장 알고리즘에는 무엇이 있어?",
+    "expected_document": "password_security.txt"
+  }
+]
