@@ -1,14 +1,16 @@
 import os
-import re
+
+import numpy as np
+from dotenv import load_dotenv
+from google import genai
 
 
 DOCUMENT_DIR = "data/documents"
 
+load_dotenv()
 
-def tokenize(text):
-    text = text.lower()
-    words = re.findall(r"[가-힣a-zA-Z0-9]+", text)
-    return words
+api_key = os.getenv("GEMINI_API_KEY")
+client = genai.Client(api_key=api_key)
 
 
 def load_documents():
@@ -29,23 +31,82 @@ def load_documents():
     return documents
 
 
+def chunk_text(text, chunk_size=500):
+    chunks = []
+
+    for i in range(0, len(text), chunk_size):
+        chunk = text[i:i + chunk_size]
+
+        if chunk.strip():
+            chunks.append(chunk)
+
+    return chunks
+
+
+def get_embedding(text, is_query=False):
+    if is_query:
+        prepared_text = f"task: search result | query: {text}"
+    else:
+        prepared_text = f"title: none | text: {text}"
+
+    result = client.models.embed_content(
+        model="gemini-embedding-2",
+        contents=prepared_text
+    )
+
+    return np.array(
+        result.embeddings[0].values,
+        dtype=np.float32
+    )
+
+
+def cosine_similarity(vector_a, vector_b):
+    denominator = (
+        np.linalg.norm(vector_a)
+        * np.linalg.norm(vector_b)
+    )
+
+    if denominator == 0:
+        return 0.0
+
+    return float(
+        np.dot(vector_a, vector_b)
+        / denominator
+    )
+
+
 def find_relevant_document(question):
     documents = load_documents()
-    question_words = tokenize(question)
+
+    question_embedding = get_embedding(
+        question,
+        is_query=True
+    )
 
     best_document = None
-    best_score = 0
+    best_score = -1
 
     for document in documents:
-        document_words = tokenize(document["content"])
+        chunks = chunk_text(document["content"])
 
-        score = 0
+        document_best_score = -1
 
-        for word in question_words:
-            score += document_words.count(word)
+        for chunk in chunks:
+            chunk_embedding = get_embedding(
+                chunk,
+                is_query=False
+            )
 
-        if score > best_score:
-            best_score = score
+            similarity = cosine_similarity(
+                question_embedding,
+                chunk_embedding
+            )
+
+            if similarity > document_best_score:
+                document_best_score = similarity
+
+        if document_best_score > best_score:
+            best_score = document_best_score
             best_document = document
 
-    return best_document, best_score
+    return best_document, round(best_score, 4)

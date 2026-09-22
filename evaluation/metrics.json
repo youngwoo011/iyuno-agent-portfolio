@@ -1,248 +1,248 @@
 {
   "total_questions": 30,
-  "correct_answers": 26,
-  "accuracy_percent": 86.67,
-  "average_response_time_seconds": 0.000397,
+  "correct_answers": 29,
+  "accuracy_percent": 96.67,
+  "average_response_time_seconds": 2.221191,
   "results": [
     {
       "question": "SQL Injection이 뭐야?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 7,
+      "score": 0.7693,
       "correct": true,
-      "response_time": 0.001052
+      "response_time": 2.354952
     },
     {
       "question": "SQL Injection은 왜 위험해?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 8,
+      "score": 0.765,
       "correct": true,
-      "response_time": 0.000411
+      "response_time": 2.280007
     },
     {
       "question": "SQL Injection을 어떻게 방어해?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 8,
+      "score": 0.7751,
       "correct": true,
-      "response_time": 0.000394
+      "response_time": 2.165255
     },
     {
       "question": "Prepared Statement는 왜 사용해?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 1,
+      "score": 0.6849,
       "correct": true,
-      "response_time": 0.000421
+      "response_time": 2.477084
     },
     {
       "question": "Parameterized Query란 무엇이야?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 1,
+      "score": 0.6739,
       "correct": true,
-      "response_time": 0.000397
+      "response_time": 2.098954
     },
     {
       "question": "SQL 쿼리에 사용자 입력값을 직접 넣으면 왜 위험해?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 11,
+      "score": 0.7497,
       "correct": true,
-      "response_time": 0.000405
+      "response_time": 2.275918
     },
     {
       "question": "데이터베이스 계정 권한은 어떻게 설정해야 해?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 2,
+      "score": 0.6117,
       "correct": true,
-      "response_time": 0.000374
+      "response_time": 2.180083
     },
     {
       "question": "인증 우회 공격과 관련된 웹 취약점은 뭐야?",
       "expected_document": "sql_injection.txt",
-      "predicted_document": "sql_injection.txt",
-      "score": 2,
-      "correct": true,
-      "response_time": 0.000382
+      "predicted_document": "xss.txt",
+      "score": 0.6676,
+      "correct": false,
+      "response_time": 2.436327
     },
     {
       "question": "데이터베이스 정보 유출을 일으킬 수 있는 공격은?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 6,
+      "score": 0.7018,
       "correct": true,
-      "response_time": 0.000377
+      "response_time": 2.102577
     },
     {
       "question": "SQL 명령어 삽입 공격을 막는 방법은?",
       "expected_document": "sql_injection.txt",
       "predicted_document": "sql_injection.txt",
-      "score": 7,
+      "score": 0.7579,
       "correct": true,
-      "response_time": 0.000355
+      "response_time": 2.264798
     },
     {
       "question": "XSS가 뭐야?",
       "expected_document": "xss.txt",
-      "predicted_document": null,
-      "score": 0,
-      "correct": false,
-      "response_time": 0.000345
+      "predicted_document": "xss.txt",
+      "score": 0.763,
+      "correct": true,
+      "response_time": 2.344894
     },
     {
       "question": "Cross Site Scripting이란 무엇이야?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 4,
+      "score": 0.7647,
       "correct": true,
-      "response_time": 0.000343
+      "response_time": 2.225956
     },
     {
       "question": "웹페이지에 악성 스크립트를 삽입하는 공격은?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 4,
+      "score": 0.7367,
       "correct": true,
-      "response_time": 0.000351
+      "response_time": 2.243012
     },
     {
       "question": "XSS 공격으로 쿠키가 탈취될 수 있어?",
       "expected_document": "xss.txt",
-      "predicted_document": "sql_injection.txt",
-      "score": 3,
-      "correct": false,
-      "response_time": 0.000352
+      "predicted_document": "xss.txt",
+      "score": 0.7181,
+      "correct": true,
+      "response_time": 2.300275
     },
     {
       "question": "XSS를 어떻게 방어해?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 1,
+      "score": 0.7769,
       "correct": true,
-      "response_time": 0.000345
+      "response_time": 2.36993
     },
     {
       "question": "사용자 입력값을 웹페이지에 출력할 때 주의할 점은?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 6,
+      "score": 0.7433,
       "correct": true,
-      "response_time": 0.00037
+      "response_time": 2.208139
     },
     {
       "question": "HTML escaping은 왜 필요해?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 1,
+      "score": 0.7121,
       "correct": true,
-      "response_time": 0.000347
+      "response_time": 2.014459
     },
     {
       "question": "Content Security Policy는 어떤 공격 방어에 도움이 돼?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 3,
+      "score": 0.7163,
       "correct": true,
-      "response_time": 0.00035
+      "response_time": 2.159902
     },
     {
       "question": "브라우저에서 악성 자바스크립트가 실행되는 취약점은?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 2,
+      "score": 0.7341,
       "correct": true,
-      "response_time": 0.000367
+      "response_time": 1.997995
     },
     {
       "question": "출력 위치에 따라 인코딩을 다르게 해야 하는 이유는?",
       "expected_document": "xss.txt",
       "predicted_document": "xss.txt",
-      "score": 2,
+      "score": 0.6503,
       "correct": true,
-      "response_time": 0.000364
+      "response_time": 2.145034
     },
     {
       "question": "비밀번호는 데이터베이스에 어떻게 저장해야 해?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 4,
+      "score": 0.7799,
       "correct": true,
-      "response_time": 0.000563
+      "response_time": 1.983646
     },
     {
       "question": "비밀번호를 평문으로 저장하면 왜 안 돼?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 3,
+      "score": 0.7638,
       "correct": true,
-      "response_time": 0.000456
+      "response_time": 2.569615
     },
     {
       "question": "Argon2id는 어디에 사용해?",
       "expected_document": "password_security.txt",
-      "predicted_document": null,
-      "score": 0,
-      "correct": false,
-      "response_time": 0.000347
+      "predicted_document": "password_security.txt",
+      "score": 0.6624,
+      "correct": true,
+      "response_time": 2.592499
     },
     {
       "question": "bcrypt는 어떤 용도로 사용해?",
       "expected_document": "password_security.txt",
-      "predicted_document": null,
-      "score": 0,
-      "correct": false,
-      "response_time": 0.000345
+      "predicted_document": "password_security.txt",
+      "score": 0.6506,
+      "correct": true,
+      "response_time": 2.323621
     },
     {
       "question": "scrypt는 무엇에 사용하는 알고리즘이야?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 1,
+      "score": 0.6452,
       "correct": true,
-      "response_time": 0.000353
+      "response_time": 2.24998
     },
     {
       "question": "비밀번호 해시에서 salt가 왜 필요해?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 3,
+      "score": 0.7245,
       "correct": true,
-      "response_time": 0.00035
+      "response_time": 2.070189
     },
     {
       "question": "같은 비밀번호인데 해시값이 다르게 나오게 하려면?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 2,
+      "score": 0.7153,
       "correct": true,
-      "response_time": 0.000346
+      "response_time": 1.957139
     },
     {
       "question": "비밀번호 저장에 단방향 해시가 적합한 이유는?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 5,
+      "score": 0.7441,
       "correct": true,
-      "response_time": 0.000355
+      "response_time": 2.129574
     },
     {
       "question": "비밀번호를 암호화해서 복호화하는 방식보다 권장되는 방법은?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 2,
+      "score": 0.7756,
       "correct": true,
-      "response_time": 0.000344
+      "response_time": 1.892238
     },
     {
       "question": "안전한 비밀번호 저장 알고리즘에는 무엇이 있어?",
       "expected_document": "password_security.txt",
       "predicted_document": "password_security.txt",
-      "score": 4,
+      "score": 0.782,
       "correct": true,
-      "response_time": 0.000354
+      "response_time": 2.221686
     }
   ]
 }
